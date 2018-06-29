@@ -118,7 +118,7 @@ public class CalendarViewPagerAdapter extends PagerAdapter implements OnDayViewC
         for (View outputView : output) {
             CalendarDayView dayView = (CalendarDayView) outputView;
             if (mSelectedDate.isToday()){
-                dayView.setRedOvalCurrentDate();
+                dayView.setYellowOvalCurrentDate();
             } else if (isSelected && !mSelectedDate.isToday()) {
                 dayView.setPurpleSolidOvalBackground();
             } else {

@@ -53,7 +53,7 @@ public class CalendarDayView extends LinearLayout {
         mLayoutBackground.setBackgroundResource(R.drawable.oval_black_solid);
     }
 
-    public void setRedOvalCurrentDate() {
+    public void setYellowOvalCurrentDate() {
         mLayoutBackground.setBackgroundResource(R.drawable.oval_yellow_solid);
     }
 
