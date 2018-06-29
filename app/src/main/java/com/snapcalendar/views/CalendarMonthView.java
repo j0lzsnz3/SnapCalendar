@@ -81,14 +81,14 @@ public class CalendarMonthView extends FrameLayout implements View.OnClickListen
     private void decorateDayView(CalendarDayView dayView, CalendarDate day, int month) {
         if (day.getMonth() != month) {
             dayView.setOtherMonthTextColor();
-        } else if (day.getMonth() == month && day.getDayOfWeek() == 1){
+        } else if (day.getMonth() == month && day.getDayOfWeek() == 1){ // Change text color Red when is Sunday
             dayView.setRedTextColor();
         } else {
             dayView.setThisMonthTextColor();
         }
 
         if (mSelectedDate != null && mSelectedDate.isDateEqual(day)) {
-            dayView.setRedOvalCurrentDate();
+            dayView.setYellowOvalCurrentDate();
         } else {
             dayView.unsetPurpleSolidOvalBackground();
         }
